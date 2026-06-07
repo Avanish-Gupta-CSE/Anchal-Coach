@@ -31,13 +31,13 @@ This file is the single source of truth for the live study state of Anchal. Ever
 
 ## 🎓 Learning Track Live Statuses
 
-### 1. Data Structures & Algorithms (Java)
+### 1. Data Structures & Algorithms (TUF+ Java)
 *Primary Tutor: Striver TUF Plus Coach*
-*Status: Initializing Basics*
-- **Active Module**: Week 1 Basics (Syntax, Loops, Pattern Printing in Java)
-- **Latest Concept**: Core Java I/O & Variables
-- **Last Problem Solved**: N/A
-- **Next Topic**: Basic Loops & Pattern Printing in Java
+*Status: In-Progress Basics (53 / 435)*
+- **Active Module**: Basic Languages & Logic pyramids (Language Basics: `9/16`, Basic Maths: `11/13`, Basic Recursion: `10/12`)
+- **Latest Concept**: Java standard basic variables & control loops.
+- **Last Problem Solved**: Basic patterns and recursion structures.
+- **Next Topic**: Completing language basics and initial STL collections.
 
 ### 2. Web Development (Harkirat Cohort Backlog)
 *Primary Tutor: Harkirat Web Dev Coach*
@@ -68,6 +68,42 @@ This file is the single source of truth for the live study state of Anchal. Ever
 - **Active Module**: Week 1 Core Learning
 - **Syllabus Stage**: Orientation & AI App foundations
 - **Active Project Idea**: Undecided (RAG/Agent application)
+
+### 6. Low Level Design (LLD) (TUF+)
+*Primary Tutor: Striver TUF+ SDE Coach*
+*Status: Initializing (0 / 71)*
+- **Active Module**: Introduction to LLD & OOP Foundations
+- **Next Target**: SOLID Principles & structural decomposition
+
+### 7. Object Oriented Programming (OOPS) (TUF+)
+*Primary Tutor: Striver TUF+ SDE Coach*
+*Status: In-Progress (2 / 51)*
+- **Active Module**: Introduction to OOPS & Objects Instantiations
+- **Next Target**: Four pillars of OOPS (Inheritance, Polymorphism, etc.)
+
+### 8. SQL + DE Foundations (TUF+)
+*Primary Tutor: Striver TUF+ SDE Coach*
+*Status: Initializing (0 / 258)*
+- **Active Module**: Relational database basics & core querying
+- **Next Target**: Core foundations and SELECT query filtering essentials
+
+### 9. Database Management Systems (DBMS) (TUF+)
+*Primary Tutor: Striver TUF+ SDE Coach*
+*Status: Initializing (0 / 108)*
+- **Active Module**: Introduction to Database Architecture & Keys
+- **Next Target**: Data Models & Entity-Relationship schemas
+
+### 10. Computer Networks (CN) (TUF+)
+*Primary Tutor: Striver TUF+ SDE Coach*
+*Status: Initializing (0 / 50)*
+- **Active Module**: Basic OSI model layouts & network nodes
+- **Next Target**: OSI model layers & TCP/IP stack mapping comparisons
+
+### 11. Operating System (OS) (TUF+)
+*Primary Tutor: Striver TUF+ SDE Coach*
+*Status: Initializing (0 / 63)*
+- **Active Module**: Basics of Operating Systems (Kernel vs User spaces)
+- **Next Target**: System calls & process execution states
 
 ---
 

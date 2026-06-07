@@ -1,38 +1,94 @@
 # 📚 Master Curriculum & Syllabus Directory
 
-This document details the weekly syllabi for all five tracks, including the real-time completion state of Harkirat's bootcamps as of June 7, 2026. This allows the Coach AI to assign exact lectures, topics, and problem sheets based on Anchal's progress.
+This document details the weekly and topic-wise syllabi for all technical learning tracks, including the real-time completion state of Harkirat's bootcamps and Striver's TUF+ DSA/Core CS tracks as of June 7, 2026. This allows the Coach AI to assign exact lectures, topics, and problem sheets based on Anchal's progress.
 
 ---
 
-## ☕ Track 1: Data Structures & Algorithms (TUF Plus, Java)
+## ☕ Track 1: Data Structures & Algorithms (TUF+ Java)
 *Language: Java | Reference: Striver's TUF Plus and Harkirat's DSA stream*
+*Active Progression: 53 / 435 Problems Completed*
 
-Anchal is starting from the basics in Java, but can cross-reference topics with Harkirat's DSA lectures (completed up to Sorting III as of June 4, 2026).
-
-| Week | Core Topics | Striver's TUF Plus Content / Exercises | Status |
+| Category | Sub-Module / Chapters | Sub-Problems Ratio | Status |
 | :--- | :--- | :--- | :--- |
-| **Week 1** | **Java Basics & Setup** | JDK setup, variables, data types, standard I/O, operators. | ⏳ Active |
-| **Week 2** | **Loops & Control Flow** | If-else statements, while/for loops, break/continue. | 📅 Pending |
-| **Week 2.1**| **Pattern Printing** | Star patterns, number pyramids, symmetry patterns. | 📅 Pending |
-| **Week 3** | **Functions & Scope** | Pass-by-value vs pass-by-reference in Java, return types. | 📅 Pending |
-| **Week 4** | **Array Foundations** | Array declaration, traversing, min/max in array, reverse array. | 📅 Pending |
-| **Week 5** | **Strings & 2D Arrays** | String pooling, string methods, matrix operations, traversal. | 📅 Pending |
-| **Week 6** | **Basic Sorting & Searching**| Bubble sort, selection sort, insertion sort. Linear search. | 📅 Pending |
-| **Week 7** | **Mixed Practice I** | Intermediate array/sorting practice problems. | 📅 Pending |
-| **Week 8** | **Complexity Analysis** | Big-O notation, time and space complexity formulas. | 📅 Pending |
-| **Week 9** | **Array Techniques** | Prefix sums, sliding window basics, contribution technique. | 📅 Pending |
-| **Week 10** | **Sets and Maps** | Hashing, `HashSet`, `HashMap` internals, collision handling. | 📅 Pending |
-| **Week 11** | **Two Pointers** | Two pointers on sorted arrays, sub-array sum, sliding windows. | 📅 Pending |
-| **Week 12** | **SDE Interview Basics** | Core interview arrays and string coding questions. | 📅 Pending |
-| **Week 13** | **Binary Search** | Classic BS, search space reduction, lower/upper bounds. | 📅 Pending |
-| **Week 14** | **Number Theory Basics** | Primality test, Sieve of Eratosthenes, GCD (Euclidean), modulo. | 📅 Pending |
-| **Week 15** | **Bit Manipulation** | Bitwise AND, OR, XOR, NOT, shift operators, masking. | 📅 Pending |
-| **Week 16** | **Recursion I** | Base cases, recursive call stack, parameter vs functional. | 📅 Pending |
-| **Week 17** | **Recursion II** | Subsequence generation, combination sum, subset problems. | 📅 Pending |
-| **Week 18** | **Backtracking I** | N-Queens problem, Rat in a Maze, Sudoku solver. | 📅 Pending |
-| **Week 19** | **Backtracking II & III** | Word search, palindrome partitioning, advanced constraints. | 📅 Pending |
-| **Week 20** | **Advanced Sorting** | Merge sort, Quick sort (partitioning logic, pivot choosing). | 📅 Pending |
-| **Week 21** | **Sorting III & Recap** | Heap sort, sorting complex custom objects using `Comparator`. | 📅 Pending |
+| **Beginner Problems (1/12)** | Fundamentals of Programming | 0 / 2 | ⏳ Active |
+| | Language Basics | 9 / 16 | ⏳ Active |
+| | Logic Building (Patterns) | 0 / 2 | ⏳ Active |
+| | Patterns | 8 / 22 | ⏳ Active |
+| | Time Complexity | 1 / 1 | ✅ Completed |
+| | STL and Collections | 0 / 2 | 📅 Pending |
+| | Concept Basics | 0 / 4 | 📅 Pending |
+| | Basic Maths | 11 / 13 | ⏳ Active |
+| | Basic Arrays | 2 / 4 | ⏳ Active |
+| | Basic Hashing | 0 / 3 | 📅 Pending |
+| | Basic Strings | 3 / 8 | ⏳ Active |
+| | Basic Recursion | 10 / 12 | ⏳ Active |
+| **Sorting (1/1)** | Algorithms | 5 / 5 | ✅ Completed |
+| **Arrays (0/4)** | Fundamentals | 3 / 6 | ⏳ Active |
+| | Logic Building | 1 / 5 | ⏳ Active |
+| | FAQs (Medium) | 0 / 14 | 📅 Pending |
+| | FAQs (Hard) | 0 / 6 | 📅 Pending |
+| **Hashing (0/2)** | Theory | 0 / 1 | 📅 Pending |
+| | FAQs | 0 / 4 | 📅 Pending |
+| **Binary Search (0/5)** | Fundamentals | 0 / 3 | 📅 Pending |
+| | Logic Building | 0 / 8 | 📅 Pending |
+| | On answers | 0 / 5 | 📅 Pending |
+| | FAQs | 0 / 7 | 📅 Pending |
+| | 2D Arrays | 0 / 5 | 📅 Pending |
+| **Recursion (0/5)** | Implementation Problems | 0 / 3 | 📅 Pending |
+| | Subsequence Pattern Problems | 0 / 2 | 📅 Pending |
+| | FAQs (Medium) | 0 / 5 | 📅 Pending |
+| | Hard | 0 / 1 | 📅 Pending |
+| | FAQs (Hard) | 0 / 6 | 📅 Pending |
+| **Linked-List (0/6)** | Fundamentals (Single LL) | 0 / 12 | 📅 Pending |
+| | Fundamentals (Doubly LL) | 0 / 12 | 📅 Pending |
+| | Logic Building | 0 / 5 | 📅 Pending |
+| | FAQs (Medium) | 0 / 8 | 📅 Pending |
+| | FAQs (Hard) | 0 / 6 | 📅 Pending |
+| | FAQS (DLL) | 0 / 2 | 📅 Pending |
+| **Bit Manipulation (0/2)** | Theory | 0 / 1 | 📅 Pending |
+| | Problems | 0 / 7 | 📅 Pending |
+| **Greedy Algorithms (0/3)** | Easy | 0 / 3 | 📅 Pending |
+| | Scheduling and Interval Problems | 0 / 6 | 📅 Pending |
+| | Hard | 0 / 2 | 📅 Pending |
+| **Sliding Window / 2 Pointer (0/4)** | Pattern and Template | 0 / 1 | 📅 Pending |
+| | Constant Window | 0 / 1 | 📅 Pending |
+| | Longest and Smallest Window Problems | 0 / 6 | 📅 Pending |
+| | Counting Subarrays / Substrings Problems | 0 / 3 | 📅 Pending |
+| **Stack / Queues (0/3)** | Implementation | 0 / 8 | 📅 Pending |
+| | Monotonic Stack | 0 / 6 | 📅 Pending |
+| | FAQs | 0 / 9 | 📅 Pending |
+| **Binary Trees (0/5)** | Theory/Traversals | 0 / 6 | 📅 Pending |
+| | Medium Problems | 0 / 6 | 📅 Pending |
+| | FAQs | 0 / 12 | 📅 Pending |
+| | Construction Problems | 0 / 4 | 📅 Pending |
+| | Traversal in Constant Space | 0 / 2 | 📅 Pending |
+| **Binary Search Trees (0/3)** | Theory and Basics | 0 / 3 | 📅 Pending |
+| | Medium | 0 / 7 | 📅 Pending |
+| | FAQs | 0 / 4 | 📅 Pending |
+| **Heaps (0/2)** | Theory and Implementation | 0 / 9 | 📅 Pending |
+| | FAQs | 0 / 1 | 📅 Pending |
+| **Graphs (0/8)** | Theory and traversals | 0 / 3 | 📅 Pending |
+| | Traversal Problems | 0 / 8 | 📅 Pending |
+| | Cycles | 0 / 4 | 📅 Pending |
+| | Hard Problems | 0 / 8 | 📅 Pending |
+| | Shortest Path Algorithms | 0 / 10 | 📅 Pending |
+| | Minimum Spanning Tree | 0 / 3 | 📅 Pending |
+| | Hard Problems II | 0 / 5 | 📅 Pending |
+| | Additional Algorithms | 0 / 3 | 📅 Pending |
+| **Dynamic Programming (0/9)** | Introduction | 0 / 1 | 📅 Pending |
+| | 1D DP | 0 / 5 | 📅 Pending |
+| | 2D DP | 0 / 1 | 📅 Pending |
+| | DP on grids | 0 / 5 | 📅 Pending |
+| | DP on stocks | 0 / 5 | 📅 Pending |
+| | DP on subsequences | 0 / 11 | 📅 Pending |
+| | LIS | 0 / 6 | 📅 Pending |
+| | DP on strings | 0 / 9 | 📅 Pending |
+| | MCM DP | 0 / 4 | 📅 Pending |
+| **Tries (0/2)** | Theory | 0 / 2 | 📅 Pending |
+| | Problems | 0 / 4 | 📅 Pending |
+| **Strings (Advanced Algo) (0/2)** | Medium Problems | 0 / 3 | 📅 Pending |
+| | Advanced Problems (Less asked) | 0 / 5 | 📅 Pending |
+| **Maths (0/1)** | Sieve of Eratosthenes | 0 / 3 | 📅 Pending |
 
 ---
 
@@ -114,7 +170,7 @@ Anchal is starting from the basics in Java, but can cross-reference topics with 
   - Deploying AI Foundry Hubs, managing compute and data connections.
   - Setting up Document Intelligence, Vision APIs, Translator, Speech, and Azure AI Search indexers.
 
-*Note: AI-103 (Azure AI App & Agent Developer) is a developer-level credential and is postponed to a future track. Focus is strictly on passing AI-901 by July 31.*
+*Note: AI-103 (Azure AI App & Agent Developer) is postponed to a future track. Focus is strictly on passing AI-901 by July 31.*
 
 ---
 
@@ -129,3 +185,94 @@ Anchal is starting from the basics in Java, but can cross-reference topics with 
 - **Schedule**: Full-time project implementation
 - **Focus**: Building a functional RAG or Multi-agent system.
 - **Goal**: Full-stack deployment with an Express backend, React frontend, and Python-based AI microservice.
+
+---
+
+## 🛠️ Track 6: Low Level Design (LLD) (TUF+)
+*Active Progression: 0 / 71 Completed*
+
+- **Introduction to LLD**: Fundamentals of systems, clean APIs, design guidelines.
+- **Solid Principles**: Single responsibility, Open-closed, Liskov substitution, Interface segregation, Dependency inversion.
+- **UML**: Structural diagrams, Class diagrams, Use Case diagrams, Relationship mappings.
+- **Creational Design Patterns**: Singleton, Factory, Abstract Factory, Builder, Prototype.
+- **Structural Design Patterns**: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy.
+- **Behavioural Design Patterns**: Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
+- **Multithreading and Concurrency**: Thread safety, locks, mutexes, synchronizations, thread pools.
+- **Dependency Injection**: IoC containers, decoupling techniques.
+- **Exceptions and Error Handling**: Bulletproof try-catch flow, robust crash-resilience.
+- **Best practices in LLD**: Coding conventions, decoupled architectures, self-documenting naming.
+- **Interview Problems (Part-1, 2, & 3)**: High-frequency architectural interview problem evaluations.
+
+---
+
+## 🧬 Track 7: Object Oriented Programming (OOPS) (TUF+)
+*Active Progression: 2 / 51 Completed*
+
+- **Introduction to OOPS**: Objects, classes, instantiation paradigms.
+- **Core Principles of OOPS**: Encapsulation, Abstraction, Inheritance, Polymorphism (Overloading & Overriding).
+- **Advance OOPS features**: Abstract classes, Interfaces, Multiple inheritance resolution, Sealed classes.
+- **Relationships and Object Behaviour**: Composition, Association, Aggregation, Object states, Life cycles.
+- **Advance Programming in OOPS**: Reflection, Generic classes, Custom annotations, Nested inner classes.
+- **OOP Design and Lifecycle Management**: Memory allocation, Garbage collection, Object pooling.
+
+---
+
+## 🗄️ Track 8: SQL + DE Foundations (TUF+)
+*Active Progression: 0 / 258 Completed*
+
+- **Getting Started & Core Foundations**: Databases, relational algebra, SQL dialects, tables.
+- **Querying Essentials & Aggregation**: SELECT, WHERE, GROUP BY, HAVING, aggregating data structures.
+- **Data Modification and Schema Evolution**: INSERT, UPDATE, DELETE, ALTER TABLE, DDL/DML.
+- **Set Operations & SQL Joins**: UNION, INTERSECT, EXCEPT, INNER/LEFT/RIGHT/CROSS joins.
+- **Transactions and Access Control**: ACID properties, isolation levels, GRANT/REVOKE permissions.
+- **Subqueries, CTEs and Temp Structures**: Subquery nesting, Common Table Expressions, temporary tables.
+- **Dates and Time, Window Functions**: Time zones, interval evaluations, RANK, DENSE_RANK, LEAD, LAG.
+- **JSON & Database Design**: Parsing JSON payloads, normalizations (1NF, 2NF, 3NF, BCNF).
+- **Query Performance & Optimization**: Indexes, explain plans, query rewrite optimizations.
+- **Database Scaling and Production Systems**: Sharding, replication, horizontal vs vertical scaling.
+- **Interview Situational Questions (Easy, Medium, Hard)**: High-frequency scenario-based sql challenges.
+
+---
+
+## 💾 Track 9: Database Management Systems (DBMS) (TUF+)
+*Active Progression: 0 / 108 Completed*
+
+- **Introduction to DBMS**: Architectures, Schemas, Instance levels.
+- **Data Models and ER Models**: Entity-Relationship diagrams, cardinalities, keys.
+- **Relational Model and Normalization**: Functional dependencies, closure sets, decomposition rules.
+- **SQL and Query Optimization**: Parsing, relational algebra execution optimization.
+- **NoSQL Databases & Distributed Database Systems**: CAP theorem, Document stores, Key-value stores.
+- **Transactions and Concurrency**: Locking protocols, Two-Phase Locking (2PL), serializability schedules.
+- **Triggers and Procedural Features**: Stored procedures, database event triggers.
+- **Recovery and Backup**: Log-based recovery, checkpointing, shadow paging.
+- **Indexing, Performance Tuning, Monitoring, Caching**: B-Trees, B+ Trees, hashing indexing strategies.
+- **Security, Access Control, Scalability, and Big Data**: Encryption, row-level security, big data frameworks.
+- **Data Warehousing and Migration**: ETL pipelines, data schema migrations in production.
+
+---
+
+## 🕸️ Track 10: Computer Networks (CN) (TUF+)
+*Active Progression: 0 / 50 Completed*
+
+- **Introduction to Computer Networks**: Topologies, network nodes, transmission mediums.
+- **Networking Models**: OSI Model 7 layers, TCP/IP Suite 4 layers.
+- **Networking Fundamentals and Basics**: Sockets, ports, packets, multiplexing.
+- **Network Protocols and Communication**: TCP handshake, UDP, HTTP, HTTPS, DNS, DHCP.
+- **IP Addressing and Subnetting**: IPv4, IPv6, CIDR notation, subnet masks, NAT routers.
+- **Routing and Switching**: Layer 2 switching, Layer 3 routing protocols (RIP, OSPF, BGP).
+- **Network Technologies and Standards**: LAN, WAN, WLAN, ethernet framing.
+- **Network Security**: Firewalls, VPNs, SSL/TLS handshakes, DDoS mitigation.
+- **Network Management, Monitoring, and Advanced Concepts**: SNMP, Wireshark packet analysis, CDN acceleration.
+
+---
+
+## 💻 Track 11: Operating System (OS) (TUF+)
+*Active Progression: 0 / 63 Completed*
+
+- **Basics of Operating Systems**: Kernel vs User space, system calls, OS types.
+- **Process Management**: Processes, threads, PCB, CPU Scheduling (FCFS, SJF, Round Robin).
+- **Synchronization and Concurrency**: Semaphores, Mutexes, Producer-Consumer, Deadlocks (Detection & Avoidance).
+- **Memory Management**: Paging, Segmentation, Virtual Memory, Page replacement algorithms (FIFO, LRU).
+- **File Systems & Disk Management**: File access controls, Disk scheduling (SSTF, SCAN, LOOK).
+- **Inter-Process Communication (IPC)**: Pipes, message queues, shared memory.
+- **System, Performance, and Advanced Topics**: OS security, virtualization, containerization mechanics.

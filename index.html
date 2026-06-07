@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anchal's Academic & SDE Success Dashboard</title>
+  <title>Anchal's SDE Success & CS Core Dashboard</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts -->
@@ -17,22 +17,25 @@
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
     .glass-card {
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.75);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.4);
     }
-    .dark-glass-card {
-      background: rgba(15, 23, 42, 0.9);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Custom thin scrollbar */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
   </style>
 </head>
-<body class="bg-gradient-to-br from-slate-50 via-indigo-50/30 to-violet-50/50 min-h-screen text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-900">
+<body class="bg-gradient-to-br from-slate-50 via-indigo-50/20 to-violet-50/40 min-h-screen text-slate-800 antialiased selection:bg-indigo-150 selection:text-indigo-950">
 
   <!-- Header Section -->
-  <header class="border-b border-indigo-100/60 bg-white/65 backdrop-blur-md sticky top-0 z-50">
+  <header class="border-b border-indigo-100/50 bg-white/70 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
       <div class="flex items-center gap-3">
         <div class="p-2.5 bg-gradient-to-tr from-indigo-600 to-violet-600 rounded-xl text-white shadow-md shadow-indigo-200">
@@ -62,34 +65,34 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     
     <!-- Hero / Goal Banner -->
-    <div class="bg-gradient-to-r from-indigo-900 via-slate-900 to-violet-950 rounded-3xl p-6 sm:p-8 text-white shadow-xl shadow-indigo-950/10 mb-8 relative overflow-hidden">
+    <div class="bg-gradient-to-r from-indigo-950 via-slate-900 to-violet-950 rounded-3xl p-6 sm:p-8 text-white shadow-xl shadow-indigo-950/10 mb-8 relative overflow-hidden">
       <!-- Background Shapes -->
       <div class="absolute -right-12 -top-12 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl"></div>
       <div class="absolute -left-12 -bottom-12 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl"></div>
       
       <div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
         <div class="lg:col-span-2">
-          <span class="text-xs font-semibold tracking-wider text-indigo-300 uppercase bg-indigo-500/20 px-3 py-1 rounded-full">Phase 1: Academic & SDE Foundation</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold mt-3 tracking-tight">Leveling up to an Enterprise AI & Full-Stack SDE</h2>
-          <p class="text-indigo-200/80 text-sm mt-2 max-w-xl">
-            Managing five parallel learning tracks: TUF Plus Java DSA, Harkirat's Web Dev backlog, Harkirat's AIML backlog, Azure AI-901 certification, and College Internship classes.
+          <span class="text-xs font-bold tracking-wider text-indigo-300 uppercase bg-indigo-500/20 px-3 py-1 rounded-full">Active SDE Core & Practical Foundations</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mt-3 tracking-tight">Leveling up SDE & CS Core Curriculums</h2>
+          <p class="text-indigo-200/80 text-sm mt-2 max-w-xl leading-relaxed">
+            Interleaving eleven comprehensive learning tracks: TUF+ DSA, Harkirat's Web Dev, Harkirat's AIML backlog, Azure AI-901 certification, College Internship, and TUF+ SDE Core CS subjects (OOPS, LLD, SQL+DE, DBMS, OS, and CN).
           </p>
         </div>
         <div class="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-md">
-          <div class="text-xs text-indigo-300 font-semibold uppercase tracking-wider mb-3">Live Focus Milestones</div>
+          <div class="text-xs text-indigo-300 font-bold uppercase tracking-wider mb-3">Live Focus Milestones</div>
           <div class="space-y-3">
             <div class="flex items-center gap-3">
-              <div class="w-2 h-2 rounded-full bg-indigo-400"></div>
+              <div class="w-2 h-2 rounded-full bg-indigo-400 animate-ping"></div>
               <div class="text-xs">
                 <span class="font-bold block text-white">College Course Starts</span>
-                <span class="text-slate-400">June 8, 2026 (Mon-Fri 4-7 PM)</span>
+                <span class="text-slate-400 font-medium">June 8, 2026 (Mon-Fri 4-7 PM)</span>
               </div>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-2 h-2 rounded-full bg-violet-400"></div>
+              <div class="w-2 h-2 rounded-full bg-rose-400"></div>
               <div class="text-xs">
-                <span class="font-bold block text-white">AI-901 Azure Fundamentals</span>
-                <span class="text-slate-400">Target Date: July 31, 2026</span>
+                <span class="font-bold block text-white">AI-901 Azure Certification</span>
+                <span class="text-slate-400 font-medium">Target Date: July 31, 2026</span>
               </div>
             </div>
           </div>
@@ -98,20 +101,20 @@
     </div>
 
     <!-- Navigation Tabs -->
-    <div class="flex overflow-x-auto gap-2 bg-slate-100 p-1.5 rounded-2xl mb-8 no-scrollbar">
-      <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center gap-2 whitespace-nowrap bg-white text-indigo-600 shadow-sm">
+    <div class="flex overflow-x-auto gap-2 bg-slate-100/80 p-1.5 rounded-2xl mb-8 no-scrollbar">
+      <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn px-5 py-3 rounded-xl text-sm font-bold transition-all duration-300 flex items-center gap-2 whitespace-nowrap bg-white text-indigo-600 shadow-sm">
         <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
         Overview Dashboard
       </button>
-      <button onclick="switchTab('daily')" id="tab-daily" class="tab-btn px-5 py-3 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all duration-300 flex items-center gap-2 whitespace-nowrap">
+      <button onclick="switchTab('daily')" id="tab-daily" class="tab-btn px-5 py-3 rounded-xl text-sm font-bold text-slate-600 hover:text-slate-900 transition-all duration-300 flex items-center gap-2 whitespace-nowrap">
         <i data-lucide="check-square" class="w-4 h-4"></i>
         Today's Goals & Schedule
       </button>
-      <button onclick="switchTab('syllabus')" id="tab-syllabus" class="tab-btn px-5 py-3 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all duration-300 flex items-center gap-2 whitespace-nowrap">
+      <button onclick="switchTab('syllabus')" id="tab-syllabus" class="tab-btn px-5 py-3 rounded-xl text-sm font-bold text-slate-600 hover:text-slate-900 transition-all duration-300 flex items-center gap-2 whitespace-nowrap">
         <i data-lucide="book-open" class="w-4 h-4"></i>
-        Weekly Syllabus
+        Detailed Syllabus (11 Tracks)
       </button>
-      <button onclick="switchTab('profile')" id="tab-profile" class="tab-btn px-5 py-3 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all duration-300 flex items-center gap-2 whitespace-nowrap">
+      <button onclick="switchTab('profile')" id="tab-profile" class="tab-btn px-5 py-3 rounded-xl text-sm font-bold text-slate-600 hover:text-slate-900 transition-all duration-300 flex items-center gap-2 whitespace-nowrap">
         <i data-lucide="user" class="w-4 h-4"></i>
         Student Profile
       </button>
@@ -135,16 +138,25 @@
               <span class="text-xs bg-indigo-50 text-indigo-600 font-bold px-2 py-1 rounded">Overall Progress</span>
             </div>
             <h3 class="text-lg font-bold text-slate-800">Learning Completion</h3>
-            <p class="text-xs text-slate-500 mt-1">Status of curriculum tracks completed so far.</p>
+            <p class="text-xs text-slate-500 mt-1">Status of core curriculum tracks completed so far.</p>
           </div>
           <div class="mt-6 space-y-4">
             <div>
               <div class="flex justify-between text-xs font-semibold text-slate-600 mb-1">
-                <span>TUF Plus DSA (Java)</span>
-                <span>5%</span>
+                <span>TUF+ DSA (Java)</span>
+                <span>12.2% (53/435)</span>
               </div>
               <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                <div class="bg-indigo-600 h-full rounded-full" style="width: 5%"></div>
+                <div class="bg-indigo-600 h-full rounded-full" style="width: 12.2%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs font-semibold text-slate-600 mb-1">
+                <span>TUF+ OOPS (Java)</span>
+                <span>3.9% (2/51)</span>
+              </div>
+              <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-blue-600 h-full rounded-full" style="width: 3.9%"></div>
               </div>
             </div>
             <div>
@@ -154,15 +166,6 @@
               </div>
               <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
                 <div class="bg-violet-600 h-full rounded-full" style="width: 5%"></div>
-              </div>
-            </div>
-            <div>
-              <div class="flex justify-between text-xs font-semibold text-slate-600 mb-1">
-                <span>AIML Bootcamp</span>
-                <span>5%</span>
-              </div>
-              <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                <div class="bg-emerald-600 h-full rounded-full" style="width: 5%"></div>
               </div>
             </div>
           </div>
@@ -220,29 +223,34 @@
       <div>
         <h3 class="text-xl font-bold text-slate-800 mb-5 flex items-center gap-2">
           <i data-lucide="milestone" class="w-5 h-5 text-indigo-600"></i>
-          Your 5 Structured Learning Tracks
+          Your 11 Structured Learning Tracks
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
-          <!-- Track 1 -->
+          <!-- Track 1: TUF+ DSA -->
           <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
             <div>
               <div class="flex justify-between items-start mb-3">
                 <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full uppercase">Track 1</span>
                 <span class="text-xs font-semibold text-slate-400">Java</span>
               </div>
-              <h4 class="text-base font-bold text-slate-800">DSA - TUF Plus & Java</h4>
+              <h4 class="text-base font-bold text-slate-800">DSA - TUF+ & Java</h4>
               <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
-                Striver's TUF Plus roadmap. Master clean SDE problem solving from Basic Loops to DP, with standard Time & Space complexity audits.
+                Striver's TUF+ structured roadmap. Solve clean problems on IDE and declare Time & Space complexity for every solution.
               </p>
             </div>
-            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
-              <span class="text-slate-500">Active Module: <span class="font-bold text-slate-700">Week 1 Basics</span></span>
-              <span class="text-emerald-500 font-bold bg-emerald-50 px-2 py-0.5 rounded">Active</span>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">53 / 435</span></span>
+                <span class="text-indigo-600 font-bold bg-indigo-50 px-2 py-0.5 rounded">12.2%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-indigo-600 h-full rounded-full" style="width: 12.2%"></div>
+              </div>
             </div>
           </div>
 
-          <!-- Track 2 -->
+          <!-- Track 2: Web Dev -->
           <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
             <div>
               <div class="flex justify-between items-start mb-3">
@@ -251,16 +259,21 @@
               </div>
               <h4 class="text-base font-bold text-slate-800">Web Dev & DevOps</h4>
               <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
-                Harkirat's Bootcamp backlog catch-up. Progression from HTML/CSS, async JS, and Node/Express backends up to multi-hook React.
+                Harkirat's Bootcamp backlog catch-up. Progression from HTML/CSS, async JS, and Express up to complex multi-hook React.
               </p>
             </div>
-            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
-              <span class="text-slate-500">Active Module: <span class="font-bold text-slate-700">Week 1 HTML/CSS</span></span>
-              <span class="text-emerald-500 font-bold bg-emerald-50 px-2 py-0.5 rounded">Active</span>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">Catching Up</span></span>
+                <span class="text-violet-600 font-bold bg-violet-50 px-2 py-0.5 rounded">5%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-violet-600 h-full rounded-full" style="width: 5%"></div>
+              </div>
             </div>
           </div>
 
-          <!-- Track 3 -->
+          <!-- Track 3: AIML -->
           <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
             <div>
               <div class="flex justify-between items-start mb-3">
@@ -269,34 +282,44 @@
               </div>
               <h4 class="text-base font-bold text-slate-800">AI & Machine Learning</h4>
               <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
-                Harkirat's AIML Cohort backlog. Understand PyTorch, Transformers, neural math, custom embedding pipelines, RAG, and multi-agent LangGraph.
+                Harkirat's AIML classes. Learn PyTorch, Transformers, custom embedding pipelines, RAG, and multi-agent LangGraph.
               </p>
             </div>
-            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
-              <span class="text-slate-500">Active Module: <span class="font-bold text-slate-700">Week 1 AI Course</span></span>
-              <span class="text-emerald-500 font-bold bg-emerald-50 px-2 py-0.5 rounded">Active</span>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">Catching Up</span></span>
+                <span class="text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded">5%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-emerald-600 h-full rounded-full" style="width: 5%"></div>
+              </div>
             </div>
           </div>
 
-          <!-- Track 4 -->
+          <!-- Track 4: Azure -->
           <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
             <div>
               <div class="flex justify-between items-start mb-3">
                 <span class="text-xs font-bold text-rose-600 bg-rose-50 px-2.5 py-1 rounded-full uppercase">Track 4</span>
-                <span class="text-xs font-semibold text-slate-400">Azure</span>
+                <span class="text-xs font-semibold text-slate-400">Cloud</span>
               </div>
               <h4 class="text-base font-bold text-slate-800">Azure AI Fundamentals (AI-901)</h4>
               <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
-                Focused fundamentals certification to clear by July 31, 2026. Covers Responsible AI, Azure AI Foundry Hubs, search indexes, translator, and speech APIs.
+                Focused fundamentals certification to clear by July 31, 2026. Covers Responsible AI, Azure AI Foundry Hubs, and Translation APIs.
               </p>
             </div>
-            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
-              <span class="text-slate-500">Active Module: <span class="font-bold text-slate-700">Module 1: AI Principles</span></span>
-              <span class="text-emerald-500 font-bold bg-emerald-50 px-2 py-0.5 rounded">Active</span>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">Not Started</span></span>
+                <span class="text-rose-600 font-bold bg-rose-50 px-2 py-0.5 rounded">0%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-rose-600 h-full rounded-full" style="width: 0%"></div>
+              </div>
             </div>
           </div>
 
-          <!-- Track 5 -->
+          <!-- Track 5: College Internship -->
           <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
             <div>
               <div class="flex justify-between items-start mb-3">
@@ -308,9 +331,152 @@
                 1-Credit course starting June 8. Combine Web Dev (Node/React) and AIML (RAG/Agents) into a full-stack, AI-powered project due July 10.
               </p>
             </div>
-            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
-              <span class="text-slate-500">Active Stage: <span class="font-bold text-slate-700">Orientation</span></span>
-              <span class="text-indigo-500 font-bold bg-indigo-50 px-2.5 py-0.5 rounded">Starts June 8</span>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Status: <span class="font-bold text-slate-700">Starts Tomorrow</span></span>
+                <span class="text-amber-600 font-bold bg-amber-50 px-2.5 py-0.5 rounded text-[10px]">Pending</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-amber-600 h-full rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Track 6: Low Level Design (LLD) -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full uppercase">Track 6</span>
+                <span class="text-xs font-semibold text-slate-400">LLD</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">Low Level Design (LLD)</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                TUF+ Software Architecture. Learn SOLID principles, Creational, Structural, and Behavioural design patterns with interview problem-solving.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">0 / 71 Chapters</span></span>
+                <span class="text-blue-600 font-bold bg-blue-50 px-2 py-0.5 rounded">0%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-blue-600 h-full rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Track 7: Object Oriented Programming -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-cyan-600 bg-cyan-50 px-2.5 py-1 rounded-full uppercase">Track 7</span>
+                <span class="text-xs font-semibold text-slate-400">OOPS</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">OOP - Core Principles & Java</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                Core Principles of OOPS: Encapsulation, Abstraction, Polymorphism, and Inheritance. Advance sealed structures, generic abstractions.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">2 / 51 Chapters</span></span>
+                <span class="text-cyan-600 font-bold bg-cyan-50 px-2 py-0.5 rounded">3.9%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-cyan-600 h-full rounded-full" style="width: 3.9%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Track 8: SQL + DE Foundations -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-teal-600 bg-teal-50 px-2.5 py-1 rounded-full uppercase">Track 8</span>
+                <span class="text-xs font-semibold text-slate-400">SQL</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">SQL & Data Engineering</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                TUF+ Relational query essentials. Joins, window functions, ACID, normalizations, scaling production DBs, and execution profiling.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">0 / 258 Chapters</span></span>
+                <span class="text-teal-600 font-bold bg-teal-50 px-2 py-0.5 rounded">0%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-teal-600 h-full rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Track 9: Database Management Systems -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full uppercase">Track 9</span>
+                <span class="text-xs font-semibold text-slate-400">DBMS</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">Database Management Systems</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                Database theory. ER Models, Normalization decompositions, 2-Phase Lockings (2PL), serializability schedules, and page indexing.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">0 / 108 Chapters</span></span>
+                <span class="text-indigo-600 font-bold bg-indigo-50 px-2 py-0.5 rounded">0%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-indigo-600 h-full rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Track 10: Computer Networks -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full uppercase">Track 10</span>
+                <span class="text-xs font-semibold text-slate-400">CN</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">Computer Networks (CN)</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                System networking basics. OSI vs TCP/IP layer protocols, IPv4/IPv6 CIDR subnets, DNS resolution, NAT routing, SSL/TLS, and VPNs.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">0 / 50 Chapters</span></span>
+                <span class="text-purple-600 font-bold bg-purple-50 px-2 py-0.5 rounded">0%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-purple-600 h-full rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Track 11: Operating System -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full uppercase">Track 11</span>
+                <span class="text-xs font-semibold text-slate-400">OS</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">Operating System (OS)</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                Core OS mechanics. Process lifecycle PCB blocks, scheduling, semaphores mutex synchronizations, deadlocks, virtual paging, and system page swaps.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4">
+              <div class="flex justify-between items-center text-xs mb-2">
+                <span class="text-slate-500">Progress: <span class="font-bold text-slate-700">0 / 63 Chapters</span></span>
+                <span class="text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded">0%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-emerald-600 h-full rounded-full" style="width: 0%"></div>
+              </div>
             </div>
           </div>
 
@@ -341,47 +507,55 @@
               <!-- Dynamically injected goals -->
               <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
                 <input type="checkbox" id="goal-1" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-1')">
-                <label for="goal-1" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
-                  <span class="block">TUF Plus Java DSA</span>
-                  <span class="text-xs text-slate-400 font-normal">Complete Week 1 syntax structures setup and solve 1 basic input/output Java practice problem.</span>
+                <label for="goal-1" class="text-sm font-bold text-slate-700 cursor-pointer select-none">
+                  <span class="block">TUF+ Java DSA (Track 1)</span>
+                  <span class="text-xs text-slate-400 font-medium">Solve 1 basic star pattern / recursion problem on IDE and document its space and time complexities.</span>
                 </label>
               </div>
 
               <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
                 <input type="checkbox" id="goal-2" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-2')">
-                <label for="goal-2" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
-                  <span class="block">Harkirat Web Dev Backlog</span>
-                  <span class="text-xs text-slate-400 font-normal">Review HTML basics & setup standard text elements on a static local project page.</span>
+                <label for="goal-2" class="text-sm font-bold text-slate-700 cursor-pointer select-none">
+                  <span class="block">TUF+ OOPS Principles (Track 7)</span>
+                  <span class="text-xs text-slate-400 font-medium">Revise objects instantiation, compile/runtime polymorphism structures, and sealed classes.</span>
                 </label>
               </div>
 
               <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
                 <input type="checkbox" id="goal-3" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-3')">
-                <label for="goal-3" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
-                  <span class="block">Harkirat AIML Backlog</span>
-                  <span class="text-xs text-slate-400 font-normal">Go through Week 1 orientation and overview of the modern Deep Learning timeline.</span>
+                <label for="goal-3" class="text-sm font-bold text-slate-700 cursor-pointer select-none">
+                  <span class="block">Harkirat Web Dev Backlog (Track 2)</span>
+                  <span class="text-xs text-slate-400 font-medium">Set up basic HTML headings, texts, and layout structures on local project file.</span>
                 </label>
               </div>
 
               <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
                 <input type="checkbox" id="goal-4" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-4')">
-                <label for="goal-4" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
-                  <span class="block">Azure AI-901 Preparation</span>
-                  <span class="text-xs text-slate-400 font-normal">Familiarize with the 6 core principles of Responsible AI (Fairness, Reliability, Transparency, etc.) on MS Learn.</span>
+                <label for="goal-4" class="text-sm font-bold text-slate-700 cursor-pointer select-none">
+                  <span class="block">Harkirat AIML Backlog (Track 3)</span>
+                  <span class="text-xs text-slate-400 font-medium">Read through Week 1 overview drive slides of Deep learning and timeline.</span>
                 </label>
               </div>
 
               <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
                 <input type="checkbox" id="goal-5" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-5')">
-                <label for="goal-5" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
-                  <span class="block">College Internship Prep</span>
-                  <span class="text-xs text-slate-400 font-normal">Prepare calendar blocks and verify orientation time (4:00 PM tomorrow) for the internship course.</span>
+                <label for="goal-5" class="text-sm font-bold text-slate-700 cursor-pointer select-none">
+                  <span class="block">Azure AI-901 Principles (Track 4)</span>
+                  <span class="text-xs text-slate-400 font-medium">Complete MS Learn interactive reviews for 6 Core Principles of Responsible AI.</span>
+                </label>
+              </div>
+
+              <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
+                <input type="checkbox" id="goal-6" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-6')">
+                <label for="goal-6" class="text-sm font-bold text-slate-700 cursor-pointer select-none">
+                  <span class="block">College Internship Prep (Track 5)</span>
+                  <span class="text-xs text-slate-400 font-medium">Confirm final orientation link & set alarm notifications for tomorrow at 4:00 PM.</span>
                 </label>
               </div>
             </div>
             
             <div class="mt-6 pt-5 border-t border-slate-100 flex justify-between items-center">
-              <span class="text-xs font-semibold text-slate-500" id="goals-progress-text">Completed: 0 of 5 (0%)</span>
+              <span class="text-xs font-bold text-slate-500" id="goals-progress-text">Completed: 0 of 6 (0%)</span>
               <div class="w-1/3 bg-slate-100 h-2.5 rounded-full overflow-hidden">
                 <div id="goals-progress-bar" class="bg-indigo-600 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
               </div>
@@ -425,7 +599,7 @@
             <div class="space-y-3 text-xs">
               <div class="flex items-center justify-between p-2 bg-slate-50 rounded-lg">
                 <span class="font-bold text-slate-700">08:00 - 10:00 AM</span>
-                <span class="bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded font-semibold">TUF Plus DSA</span>
+                <span class="bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded font-semibold">TUF+ DSA / OOPS</span>
               </div>
               <div class="flex items-center justify-between p-2 bg-slate-50 rounded-lg">
                 <span class="font-bold text-slate-700">11:00 AM - 01:00 PM</span>
@@ -451,13 +625,14 @@
     <!-- Tab 3: Weekly Syllabus -->
     <section id="content-syllabus" class="tab-content hidden space-y-8">
       
+      <!-- Track 1 detailed subcategories view -->
       <div class="bg-white border border-slate-100 shadow-sm rounded-2xl p-6">
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
           <div>
-            <h3 class="text-lg font-bold text-slate-800">Track 1: TUF Plus DSA Weeks & Topics</h3>
-            <p class="text-xs text-slate-500 mt-1">Striver's Take You Forward Plus structured Java syllabus.</p>
+            <h3 class="text-lg font-bold text-slate-800">Track 1: TUF+ DSA Complete Chapter Roadmap</h3>
+            <p class="text-xs text-slate-500 mt-1">Striver's Take You Forward Plus structured Java syllabus chapters.</p>
           </div>
-          <a href="https://github.com/Avanish-Gupta-CSE/Anchal-Coach/blob/main/.brain/Harkirat_Lectures_List.md" target="_blank" class="text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-xl flex items-center gap-1.5 transition-all duration-300">
+          <a href="https://github.com/Avanish-Gupta-CSE/Anchal-Coach/blob/main/.brain/Harkirat_Lectures_List.md" target="_blank" class="text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-xl flex items-center gap-1.5 transition-all duration-300 shadow-sm">
             <i data-lucide="external-link" class="w-4 h-4"></i> View Complete Harkirat Lectures List
           </a>
         </div>
@@ -466,78 +641,98 @@
           <table class="min-w-full divide-y divide-slate-150 text-sm">
             <thead class="bg-slate-50">
               <tr>
-                <th class="px-4 py-3 text-left font-bold text-slate-600">Week</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-600">Core Topics</th>
-                <th class="px-4 py-3 text-left font-bold text-slate-600">Striver's TUF Plus Java Content</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-600">Chapter Module</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-600">Sub-Categories / Detailed Topics Included</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-600">Sub-Problems</th>
                 <th class="px-4 py-3 text-left font-bold text-slate-600">Status</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100 text-slate-700">
-              <tr class="bg-indigo-50/20">
-                <td class="px-4 py-3 font-semibold text-indigo-700">Week 1</td>
-                <td class="px-4 py-3 font-semibold">Java Basics & Setup</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">JDK setup, variables, data types, standard I/O, operators.</td>
+              <tr class="bg-indigo-50/25">
+                <td class="px-4 py-3 font-bold text-indigo-900">Beginner Problems</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-600">
+                  Fundamentals of Programming (0/2) • Language Basics (9/16) • Logic Building Patterns (0/2) • Star Patterns (8/22) • Time Complexities (1/1) • Basic Maths (11/13) • Arrays Basics (2/4) • Basic Hashing (0/3) • Strings basics (3/8) • Recursion basics (10/12)
+                </td>
+                <td class="px-4 py-3 font-semibold text-indigo-700">34 / 84</td>
                 <td class="px-4 py-3"><span class="text-xs bg-indigo-100 text-indigo-700 px-2.5 py-0.5 rounded font-bold">Active</span></td>
               </tr>
-              <tr>
-                <td class="px-4 py-3 font-semibold">Week 2</td>
-                <td class="px-4 py-3">Loops & Control Flow</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">If-else statements, while/for loops, break/continue.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              <tr class="bg-indigo-50/10">
+                <td class="px-4 py-3 font-bold text-slate-800">Sorting</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-600">Bubble Sort • Selection Sort • Insertion Sort • Sorting Algorithms theory</td>
+                <td class="px-4 py-3 font-semibold text-slate-700">5 / 5</td>
+                <td class="px-4 py-3"><span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded font-bold">Completed</span></td>
               </tr>
               <tr>
-                <td class="px-4 py-3 font-semibold">Week 2.1</td>
-                <td class="px-4 py-3">Pattern Printing</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">Star patterns, number pyramids, symmetry patterns.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+                <td class="px-4 py-3 font-semibold">Arrays</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Fundamentals (3/6) • Logic Building (1/5) • FAQs (Medium) (0/14) • FAQs (Hard) (0/6)</td>
+                <td class="px-4 py-3">4 / 31</td>
+                <td class="px-4 py-3"><span class="text-xs bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-semibold">Active</span></td>
               </tr>
               <tr>
-                <td class="px-4 py-3 font-semibold">Week 3</td>
-                <td class="px-4 py-3">Functions & Scope</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">Pass-by-value vs pass-by-reference in Java, return types.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+                <td class="px-4 py-3 font-semibold">Hashing</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Theory (0/1) • FAQs (0/4)</td>
+                <td class="px-4 py-3">0 / 5</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
               </tr>
               <tr>
-                <td class="px-4 py-3 font-semibold">Week 4</td>
-                <td class="px-4 py-3">Array Foundations</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">Array declaration, traversing, min/max in array, reverse array.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+                <td class="px-4 py-3 font-semibold">Binary Search</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Fundamentals (0/3) • Logic Building (0/8) • On Answers (0/5) • FAQs (0/7) • 2D Arrays (0/5)</td>
+                <td class="px-4 py-3">0 / 28</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
               </tr>
               <tr>
-                <td class="px-4 py-3 font-semibold">Week 5</td>
-                <td class="px-4 py-3">Strings & 2D Arrays</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">String pooling, string methods, matrix operations, traversal.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+                <td class="px-4 py-3 font-semibold">Recursion</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Implementation (0/3) • Subsequence Pattern (0/2) • FAQs Medium (0/5) • Hard (0/1) • FAQs Hard (0/6)</td>
+                <td class="px-4 py-3">0 / 17</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
               </tr>
               <tr>
-                <td class="px-4 py-3 font-semibold">Week 6 - 8</td>
-                <td class="px-4 py-3">Sorting & Complexity</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">Bubble, Selection, Insertion Sorts; Big-O analysis equations.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+                <td class="px-4 py-3 font-semibold">Linked-List</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Single LL Fundamentals (0/12) • Doubly LL (0/12) • Logic Building (0/5) • FAQs Medium (0/8) • FAQs Hard (0/6) • DLL FAQs (0/2)</td>
+                <td class="px-4 py-3">0 / 45</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
               </tr>
               <tr>
-                <td class="px-4 py-3 font-semibold">Week 9 - 12</td>
-                <td class="px-4 py-3">Sliding Window & Sets</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">Prefix sums, sliding window, HashSets, HashMaps, Two Pointers.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+                <td class="px-4 py-3 font-semibold">Bit Manipulation</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Theory (0/1) • Problems (0/7)</td>
+                <td class="px-4 py-3">0 / 8</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
               </tr>
               <tr>
-                <td class="px-4 py-3 font-semibold">Week 13 - 15</td>
-                <td class="px-4 py-3">Binary Search & Number Theory</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">Classic Binary Search, Bounds, Sieve of Eratosthenes, Bitwise operators.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+                <td class="px-4 py-3 font-semibold">Greedy Algorithms</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Easy (0/3) • Scheduling & Interval Problems (0/6) • Hard (0/2)</td>
+                <td class="px-4 py-3">0 / 11</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
               </tr>
               <tr>
-                <td class="px-4 py-3 font-semibold">Week 16 - 19</td>
-                <td class="px-4 py-3">Recursion & Backtracking</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">Base cases, call stacks, subsets, N-Queens, Sudoku Solver.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+                <td class="px-4 py-3 font-semibold">Sliding Window</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Pattern & Templates (0/1) • Constant Windows (0/1) • Longest/Smallest Windows (0/6) • Subarray counts (0/3)</td>
+                <td class="px-4 py-3">0 / 11</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
               </tr>
               <tr>
-                <td class="px-4 py-3 font-semibold">Week 20 - 21</td>
-                <td class="px-4 py-3">Advanced Sorting</td>
-                <td class="px-4 py-3 text-slate-500 text-xs">Merge sort, Quick sort, Heap sort, custom comparators.</td>
-                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+                <td class="px-4 py-3 font-semibold">Stack & Queues</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Implementation (0/8) • Monotonic Stacks (0/6) • FAQs (0/9)</td>
+                <td class="px-4 py-3">0 / 23</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Binary Trees</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Theory/Traversals (0/6) • Medium (0/6) • FAQs (0/12) • Construction (0/4) • Constant Space Traversal (0/2)</td>
+                <td class="px-4 py-3">0 / 30</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Dynamic Programming</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">1D DP (0/5) • 2D DP (0/1) • Grid DP (0/5) • Stocks DP (0/5) • Subsequence DP (0/11) • LIS (0/6) • Strings DP (0/9) • MCM (0/4)</td>
+                <td class="px-4 py-3">0 / 46</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Graphs</td>
+                <td class="px-4 py-3 text-xs leading-relaxed text-slate-500">Theory (0/3) • Traversal problems (0/8) • Cycles (0/4) • Hard (0/8) • Shortest Paths (0/10) • MST (0/3) • Hard II (0/5)</td>
+                <td class="px-4 py-3">0 / 46</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2 py-0.5 rounded font-semibold">Pending</span></td>
               </tr>
             </tbody>
           </table>
@@ -553,25 +748,25 @@
         
         <!-- Profile Overview Card -->
         <div class="glass-card rounded-2xl p-6 shadow-sm border border-slate-100 text-center md:col-span-1">
-          <div class="w-24 h-24 bg-gradient-to-tr from-indigo-600 to-violet-600 rounded-full mx-auto flex items-center justify-center text-white text-3xl font-extrabold shadow-md mb-4">
+          <div class="w-24 h-24 bg-gradient-to-tr from-indigo-600 to-violet-600 rounded-full mx-auto flex items-center justify-center text-white text-3xl font-extrabold shadow-md mb-4 animate-bounce">
             A
           </div>
           <h3 class="text-xl font-bold text-slate-800">Anchal</h3>
           <p class="text-xs text-slate-500 mt-1">B.Tech in Information Technology</p>
-          <div class="text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full font-bold inline-block mt-3">
+          <div class="text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full font-bold inline-block mt-3 shadow-sm border border-indigo-100">
             IGDTUW, Delhi
           </div>
           
-          <div class="border-t border-slate-100 mt-6 pt-5 space-y-3 text-left text-xs">
-            <div class="flex justify-between font-semibold">
+          <div class="border-t border-slate-100 mt-6 pt-5 space-y-3 text-left text-xs font-semibold">
+            <div class="flex justify-between">
               <span class="text-slate-500">Academic Year:</span>
               <span class="text-slate-800">Finished 1st Year (Entering 2nd)</span>
             </div>
-            <div class="flex justify-between font-semibold">
+            <div class="flex justify-between">
               <span class="text-slate-500">DSA Language:</span>
               <span class="text-indigo-600">Java</span>
             </div>
-            <div class="flex justify-between font-semibold">
+            <div class="flex justify-between">
               <span class="text-slate-500">AI Stack:</span>
               <span class="text-emerald-600">Python, PyTorch</span>
             </div>
@@ -587,36 +782,36 @@
           
           <div class="space-y-4">
             <div class="flex gap-4 p-4 bg-slate-50 rounded-xl">
-              <div class="p-2.5 bg-indigo-100 text-indigo-600 rounded-lg shrink-0 h-10 w-10 flex items-center justify-center">
+              <div class="p-2.5 bg-indigo-100 text-indigo-600 rounded-lg shrink-0 h-10 w-10 flex items-center justify-center shadow-sm">
                 <i data-lucide="laptop" class="w-5 h-5"></i>
               </div>
               <div class="text-xs">
                 <h4 class="font-bold text-slate-800 text-sm">Double-Engine Developer Expertise</h4>
-                <p class="text-slate-500 mt-1 leading-relaxed">
+                <p class="text-slate-500 mt-1 leading-relaxed font-medium">
                   Build massive competence in both SDE basics / Core Algorithms (Java) and modern software building (Full-Stack React + Agentic AI), establishing herself as an incredibly unique candidate.
                 </p>
               </div>
             </div>
 
             <div class="flex gap-4 p-4 bg-slate-50 rounded-xl">
-              <div class="p-2.5 bg-emerald-100 text-emerald-600 rounded-lg shrink-0 h-10 w-10 flex items-center justify-center">
+              <div class="p-2.5 bg-emerald-100 text-emerald-600 rounded-lg shrink-0 h-10 w-10 flex items-center justify-center shadow-sm">
                 <i data-lucide="target" class="w-5 h-5"></i>
               </div>
               <div class="text-xs">
                 <h4 class="font-bold text-slate-800 text-sm">Target SDE Internships</h4>
-                <p class="text-slate-500 mt-1 leading-relaxed">
+                <p class="text-slate-500 mt-1 leading-relaxed font-medium">
                   Prepare for high-paying pre-final year SDE internship roles. Foundations laid out in these 2 months are critical for securing elite opportunities.
                 </p>
               </div>
             </div>
 
             <div class="flex gap-4 p-4 bg-slate-50 rounded-xl">
-              <div class="p-2.5 bg-violet-100 text-violet-600 rounded-lg shrink-0 h-10 w-10 flex items-center justify-center">
+              <div class="p-2.5 bg-violet-100 text-violet-600 rounded-lg shrink-0 h-10 w-10 flex items-center justify-center shadow-sm">
                 <i data-lucide="cloud" class="w-5 h-5"></i>
               </div>
               <div class="text-xs">
                 <h4 class="font-bold text-slate-800 text-sm">Certified Azure AI Practitioner</h4>
-                <p class="text-slate-500 mt-1 leading-relaxed">
+                <p class="text-slate-500 mt-1 leading-relaxed font-medium">
                   Clear AI-901 exam by end of July to earn professional cloud credentials early in her engineering journey, validating capabilities and boosting resume strength.
                 </p>
               </div>
@@ -630,7 +825,7 @@
 
   </main>
 
-  <footer class="border-t border-slate-100 bg-white/60 py-6 mt-12">
+  <footer class="border-t border-slate-150/40 bg-white/60 py-6 mt-12">
     <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-400 font-semibold">
       &copy; 2026 Anchal's Persistent Brain-Complex & SDE Coach. Fully Autonomous Deployment.
     </div>
@@ -663,7 +858,7 @@
     }
 
     // Dynamic Goals Tracking with LocalStorage
-    const GOALS_KEY = "anchal_dashboard_goals";
+    const GOALS_KEY = "anchal_dashboard_goals_exhaustive";
 
     function getSavedGoals() {
       const stored = localStorage.getItem(GOALS_KEY);
