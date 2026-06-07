@@ -1,0 +1,9 @@
+# OpenCode local agent logs & runtime directories
+logs/
+runtimes/
+sessions/
+tmp/
+.cache/
+*.log
+*.tmp
+*.bak

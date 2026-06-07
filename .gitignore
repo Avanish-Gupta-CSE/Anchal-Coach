@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OpenCode local agent logs & runtime directories
+.opencode/logs/
+.opencode/runtimes/
+.opencode/sessions/
+.opencode/tmp/
+.opencode/.cache/
+.opencode/*.log
+.opencode/*.tmp
+.opencode/*.bak
