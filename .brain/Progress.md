@@ -32,10 +32,13 @@ This journal serves as the chronological memory of Anchal's learning sessions. A
 
 #### 🚀 Key Achievements & Topics Covered:
 - **Workspace Architecture**: Successfully set up the persistent memory layer (`.brain/` directory) containing `README.md`, `BrainState.md`, `Profile.md`, and initialized the `Progress.md` journal.
-- **Syllabus Baseline**: Analyzed and cataloged Harkirat's Web Dev (Cohort 3 live up to Week 21), AIML (Week 21 live), and DSA (Week 21 live) to map backlogs.
-- **Certification Track established**: Formulated the AI-901 and AI-103 Azure certification path to replace the retired exams, aligning her AIML study with official Microsoft curricula.
+- **Detailed Lecture Log**: Fully parsed the 3 massive JSON files of Harkirat's cohorts and extracted all individual videos, durations, and materials, compiling them in a dedicated `.brain/Harkirat_Lectures_List.md` index.
+- **Git Repo & Remote**: Initialized git repository locally, created a public GitHub repository `Anchal-Coach` under `Avanish-Gupta-CSE` via GitHub CLI, and pushed all initial files to `main`.
+- **SDE Success Dashboard**: Engineered a responsive, beautiful, single-page dashboard at `index.html` featuring interactive tabs, time-blocking schedules, academic targets, and an interactive LocalStorage-persisted "Today's Goals" check-off list.
+- **Certification Track optimized**: Selected AI-901 (Azure AI Fundamentals) as her single target certification for July (easiest out of AI-901 and AI-103) and updated all memory files to maintain consistency.
 
 #### 🧠 Micro-Decisions & Architectural Insights:
+- **No ADO Overheads**: Excluded Berkadia/ADO tracking guidelines from this local academic/career project to keep overheads zero and maintain a pure student focus.
 - **Java Selection**: Confirmed Java as her primary DSA language for robust SWE placement prep, while retaining Python for AIML and JS/TS for Web Dev.
 - **Interleaved Weekly Timetable**: Structured the syllabus to align her morning block with algorithmic rigor (Java DSA) and evening block with practical building (Web Dev / AI / Azure).
 - **College Course Alignment**: Noted that her 1-credit college course starting June 8 (classes Mon-Fri 4-7 PM) will form the perfect workspace for hands-on RAG/Agent project prototyping.
@@ -44,3 +47,4 @@ This journal serves as the chronological memory of Anchal's learning sessions. A
 - **Day 1 Goal**: Formally begin Phase 1 tomorrow. Attend first college class (4:00 PM - 7:00 PM).
 - **Core Study Target**: Initialize TUF Plus Java basics (Week 1 syntax structure) and block out the morning study hour.
 - **Project Target**: Gather details/orientation of the college internship project requirements on Day 1.
+- **Dashboard Deployment**: Configure GitHub Pages to host the SDE Success Dashboard directly from the main branch.

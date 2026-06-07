@@ -64,3 +64,19 @@ graph TD
 - [ ] Secure API keys using Azure Key Vault and Managed Identities (incorporating cloud security guidelines).
 - [ ] Run full smoke tests to capture and fix any latency or hallucinations.
 - [ ] **Milestone 4**: Final live demonstration, compilation of project report, and submission to the IGDTUW evaluation portal.
+
+---
+
+## 🎨 Personal Project: SDE Success Dashboard (GitHub Pages)
+
+### 📌 Dashboard Metadata
+- **Project Name**: Anchal SDE Success Dashboard
+- **Hosting URL**: [https://avanish-gupta-cse.github.io/Anchal-Coach/](https://avanish-gupta-cse.github.io/Anchal-Coach/)
+- **Repository**: [https://github.com/Avanish-Gupta-CSE/Anchal-Coach](https://github.com/Avanish-Gupta-CSE/Anchal-Coach)
+- **Features**:
+  - Interactive status trackers for all 5 SDE study tracks.
+  - Interactive "Today's Goals" checklist (persisted locally using HTML5 LocalStorage).
+  - Weekly syllabus roadmap view.
+  - Direct access links to the complete Harkirat Lecture catalog.
+  - Responsive, modern glassmorphic theme designed using Tailwind CSS.
+

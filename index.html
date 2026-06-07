@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anchal's Academic & SDE Success Dashboard</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .dark-glass-card {
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-indigo-50/30 to-violet-50/50 min-h-screen text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-900">
+
+  <!-- Header Section -->
+  <header class="border-b border-indigo-100/60 bg-white/65 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <div class="p-2.5 bg-gradient-to-tr from-indigo-600 to-violet-600 rounded-xl text-white shadow-md shadow-indigo-200">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">Anchal's SDE Coach</h1>
+          <p class="text-xs text-slate-500 font-medium">B.Tech IT, First Year Completed • IGDTUW Delhi</p>
+        </div>
+      </div>
+      
+      <!-- Quick Metrics Header -->
+      <div class="flex items-center gap-6">
+        <div class="flex items-center gap-2.5 bg-white border border-slate-100 px-4 py-1.5 rounded-full shadow-sm">
+          <div class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></div>
+          <span class="text-xs font-semibold text-slate-600">Streak: <span id="streak-counter" class="text-indigo-600 text-sm">0 Days</span></span>
+        </div>
+        <div class="text-xs font-semibold text-slate-500 flex items-center gap-1">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+          <span>Today: <span id="current-date" class="text-slate-700">June 7, 2026</span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Hero / Goal Banner -->
+    <div class="bg-gradient-to-r from-indigo-900 via-slate-900 to-violet-950 rounded-3xl p-6 sm:p-8 text-white shadow-xl shadow-indigo-950/10 mb-8 relative overflow-hidden">
+      <!-- Background Shapes -->
+      <div class="absolute -right-12 -top-12 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute -left-12 -bottom-12 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl"></div>
+      
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-semibold tracking-wider text-indigo-300 uppercase bg-indigo-500/20 px-3 py-1 rounded-full">Phase 1: Academic & SDE Foundation</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mt-3 tracking-tight">Leveling up to an Enterprise AI & Full-Stack SDE</h2>
+          <p class="text-indigo-200/80 text-sm mt-2 max-w-xl">
+            Managing five parallel learning tracks: TUF Plus Java DSA, Harkirat's Web Dev backlog, Harkirat's AIML backlog, Azure AI-901 certification, and College Internship classes.
+          </p>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-md">
+          <div class="text-xs text-indigo-300 font-semibold uppercase tracking-wider mb-3">Live Focus Milestones</div>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-indigo-400"></div>
+              <div class="text-xs">
+                <span class="font-bold block text-white">College Course Starts</span>
+                <span class="text-slate-400">June 8, 2026 (Mon-Fri 4-7 PM)</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-violet-400"></div>
+              <div class="text-xs">
+                <span class="font-bold block text-white">AI-901 Azure Fundamentals</span>
+                <span class="text-slate-400">Target Date: July 31, 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="flex overflow-x-auto gap-2 bg-slate-100 p-1.5 rounded-2xl mb-8 no-scrollbar">
+      <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center gap-2 whitespace-nowrap bg-white text-indigo-600 shadow-sm">
+        <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+        Overview Dashboard
+      </button>
+      <button onclick="switchTab('daily')" id="tab-daily" class="tab-btn px-5 py-3 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all duration-300 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="check-square" class="w-4 h-4"></i>
+        Today's Goals & Schedule
+      </button>
+      <button onclick="switchTab('syllabus')" id="tab-syllabus" class="tab-btn px-5 py-3 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all duration-300 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="book-open" class="w-4 h-4"></i>
+        Weekly Syllabus
+      </button>
+      <button onclick="switchTab('profile')" id="tab-profile" class="tab-btn px-5 py-3 rounded-xl text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all duration-300 flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="user" class="w-4 h-4"></i>
+        Student Profile
+      </button>
+    </div>
+
+    <!-- Tab Contents -->
+    
+    <!-- Tab 1: Overview Dashboard -->
+    <section id="content-overview" class="tab-content block space-y-8">
+      
+      <!-- Key Statistics and Progress Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Track Completion Summary Card -->
+        <div class="glass-card rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div class="p-3 bg-indigo-50 text-indigo-600 rounded-xl">
+                <i data-lucide="trending-up" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs bg-indigo-50 text-indigo-600 font-bold px-2 py-1 rounded">Overall Progress</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800">Learning Completion</h3>
+            <p class="text-xs text-slate-500 mt-1">Status of curriculum tracks completed so far.</p>
+          </div>
+          <div class="mt-6 space-y-4">
+            <div>
+              <div class="flex justify-between text-xs font-semibold text-slate-600 mb-1">
+                <span>TUF Plus DSA (Java)</span>
+                <span>5%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-indigo-600 h-full rounded-full" style="width: 5%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs font-semibold text-slate-600 mb-1">
+                <span>Web Dev & DevOps</span>
+                <span>5%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-violet-600 h-full rounded-full" style="width: 5%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-xs font-semibold text-slate-600 mb-1">
+                <span>AIML Bootcamp</span>
+                <span>5%</span>
+              </div>
+              <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-emerald-600 h-full rounded-full" style="width: 5%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Azure Exam Countdown Card -->
+        <div class="glass-card rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div class="p-3 bg-violet-50 text-violet-600 rounded-xl">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs bg-emerald-50 text-emerald-600 font-bold px-2.5 py-1 rounded">End-July Target</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800">Azure AI-901 Exam</h3>
+            <p class="text-xs text-slate-500 mt-1">Easiest fundamentals cert chosen to focus on for July.</p>
+          </div>
+          <div class="mt-6 py-3 px-4 bg-slate-50 border border-slate-100 rounded-xl flex items-center justify-between">
+            <div class="text-xs font-semibold text-slate-600">Countdown:</div>
+            <div class="text-sm font-bold text-indigo-600 bg-white border border-slate-150 px-3 py-1 rounded-full shadow-sm">
+              54 Days Left
+            </div>
+          </div>
+          <div class="text-[11px] text-slate-400 mt-2 font-medium">Exam date set to July 31, 2026.</div>
+        </div>
+
+        <!-- College Internship Sprint Card -->
+        <div class="glass-card rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div class="p-3 bg-amber-50 text-amber-600 rounded-xl">
+                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs bg-amber-50 text-amber-600 font-bold px-2.5 py-1 rounded">IGDTUW Course</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800">1-Credit AI Internship</h3>
+            <p class="text-xs text-slate-500 mt-1">Starts June 8, 2026 (Mon-Fri 4:00 PM - 7:00 PM).</p>
+          </div>
+          <div class="mt-4 space-y-2">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-600">
+              <span>Classes:</span>
+              <span class="text-indigo-600">3 Weeks (June 8 - June 26)</span>
+            </div>
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-600">
+              <span>Project Sprint:</span>
+              <span class="text-violet-600">2 Weeks (June 29 - July 10)</span>
+            </div>
+          </div>
+          <div class="text-[11px] text-slate-400 mt-2 font-medium">College project due July 10, 2026.</div>
+        </div>
+
+      </div>
+
+      <!-- Tracks Overview Grid -->
+      <div>
+        <h3 class="text-xl font-bold text-slate-800 mb-5 flex items-center gap-2">
+          <i data-lucide="milestone" class="w-5 h-5 text-indigo-600"></i>
+          Your 5 Structured Learning Tracks
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Track 1 -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full uppercase">Track 1</span>
+                <span class="text-xs font-semibold text-slate-400">Java</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">DSA - TUF Plus & Java</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                Striver's TUF Plus roadmap. Master clean SDE problem solving from Basic Loops to DP, with standard Time & Space complexity audits.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
+              <span class="text-slate-500">Active Module: <span class="font-bold text-slate-700">Week 1 Basics</span></span>
+              <span class="text-emerald-500 font-bold bg-emerald-50 px-2 py-0.5 rounded">Active</span>
+            </div>
+          </div>
+
+          <!-- Track 2 -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-violet-600 bg-violet-50 px-2.5 py-1 rounded-full uppercase">Track 2</span>
+                <span class="text-xs font-semibold text-slate-400">Node/React</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">Web Dev & DevOps</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                Harkirat's Bootcamp backlog catch-up. Progression from HTML/CSS, async JS, and Node/Express backends up to multi-hook React.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
+              <span class="text-slate-500">Active Module: <span class="font-bold text-slate-700">Week 1 HTML/CSS</span></span>
+              <span class="text-emerald-500 font-bold bg-emerald-50 px-2 py-0.5 rounded">Active</span>
+            </div>
+          </div>
+
+          <!-- Track 3 -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full uppercase">Track 3</span>
+                <span class="text-xs font-semibold text-slate-400">Python</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">AI & Machine Learning</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                Harkirat's AIML Cohort backlog. Understand PyTorch, Transformers, neural math, custom embedding pipelines, RAG, and multi-agent LangGraph.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
+              <span class="text-slate-500">Active Module: <span class="font-bold text-slate-700">Week 1 AI Course</span></span>
+              <span class="text-emerald-500 font-bold bg-emerald-50 px-2 py-0.5 rounded">Active</span>
+            </div>
+          </div>
+
+          <!-- Track 4 -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-rose-600 bg-rose-50 px-2.5 py-1 rounded-full uppercase">Track 4</span>
+                <span class="text-xs font-semibold text-slate-400">Azure</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">Azure AI Fundamentals (AI-901)</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                Focused fundamentals certification to clear by July 31, 2026. Covers Responsible AI, Azure AI Foundry Hubs, search indexes, translator, and speech APIs.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
+              <span class="text-slate-500">Active Module: <span class="font-bold text-slate-700">Module 1: AI Principles</span></span>
+              <span class="text-emerald-500 font-bold bg-emerald-50 px-2 py-0.5 rounded">Active</span>
+            </div>
+          </div>
+
+          <!-- Track 5 -->
+          <div class="bg-white border border-slate-100 shadow-sm p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full uppercase">Track 5</span>
+                <span class="text-xs font-semibold text-slate-400">Internship</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-800">IGDTUW Internship Course</h4>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                1-Credit course starting June 8. Combine Web Dev (Node/React) and AIML (RAG/Agents) into a full-stack, AI-powered project due July 10.
+              </p>
+            </div>
+            <div class="border-t border-slate-50 mt-4 pt-4 flex justify-between items-center text-xs">
+              <span class="text-slate-500">Active Stage: <span class="font-bold text-slate-700">Orientation</span></span>
+              <span class="text-indigo-500 font-bold bg-indigo-50 px-2.5 py-0.5 rounded">Starts June 8</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Tab 2: Today's Goals & Schedule -->
+    <section id="content-daily" class="tab-content hidden space-y-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Today's Goals Checklists -->
+        <div class="lg:col-span-2 space-y-6">
+          <div class="glass-card rounded-2xl p-6 shadow-sm border border-slate-100">
+            <div class="flex justify-between items-center mb-5">
+              <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                <i data-lucide="check-square" class="w-5 h-5 text-indigo-600"></i>
+                Today's Active Targets (June 7, 2026)
+              </h3>
+              <button onclick="resetGoals()" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
+                <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Reset
+              </button>
+            </div>
+            
+            <div id="goals-list" class="space-y-4">
+              <!-- Dynamically injected goals -->
+              <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
+                <input type="checkbox" id="goal-1" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-1')">
+                <label for="goal-1" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
+                  <span class="block">TUF Plus Java DSA</span>
+                  <span class="text-xs text-slate-400 font-normal">Complete Week 1 syntax structures setup and solve 1 basic input/output Java practice problem.</span>
+                </label>
+              </div>
+
+              <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
+                <input type="checkbox" id="goal-2" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-2')">
+                <label for="goal-2" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
+                  <span class="block">Harkirat Web Dev Backlog</span>
+                  <span class="text-xs text-slate-400 font-normal">Review HTML basics & setup standard text elements on a static local project page.</span>
+                </label>
+              </div>
+
+              <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
+                <input type="checkbox" id="goal-3" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-3')">
+                <label for="goal-3" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
+                  <span class="block">Harkirat AIML Backlog</span>
+                  <span class="text-xs text-slate-400 font-normal">Go through Week 1 orientation and overview of the modern Deep Learning timeline.</span>
+                </label>
+              </div>
+
+              <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
+                <input type="checkbox" id="goal-4" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-4')">
+                <label for="goal-4" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
+                  <span class="block">Azure AI-901 Preparation</span>
+                  <span class="text-xs text-slate-400 font-normal">Familiarize with the 6 core principles of Responsible AI (Fairness, Reliability, Transparency, etc.) on MS Learn.</span>
+                </label>
+              </div>
+
+              <div class="flex items-start gap-3 p-4 bg-white border border-slate-100 rounded-xl transition-all duration-300 hover:border-indigo-150">
+                <input type="checkbox" id="goal-5" class="goal-checkbox mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 cursor-pointer" onchange="toggleGoal('goal-5')">
+                <label for="goal-5" class="text-sm font-semibold text-slate-700 cursor-pointer select-none">
+                  <span class="block">College Internship Prep</span>
+                  <span class="text-xs text-slate-400 font-normal">Prepare calendar blocks and verify orientation time (4:00 PM tomorrow) for the internship course.</span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="mt-6 pt-5 border-t border-slate-100 flex justify-between items-center">
+              <span class="text-xs font-semibold text-slate-500" id="goals-progress-text">Completed: 0 of 5 (0%)</span>
+              <div class="w-1/3 bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                <div id="goals-progress-bar" class="bg-indigo-600 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SDE Timetables Sidebar -->
+        <div class="space-y-6">
+          
+          <!-- Daily Execution Rules -->
+          <div class="bg-indigo-900 text-white rounded-2xl p-6 shadow-md relative overflow-hidden">
+            <div class="relative z-10">
+              <h3 class="text-base font-extrabold flex items-center gap-2 mb-4">
+                <i data-lucide="shield-check" class="w-5 h-5 text-indigo-300"></i>
+                Anchal's Discipline Code
+              </h3>
+              <ul class="space-y-3 text-xs text-indigo-100 font-medium">
+                <li class="flex gap-2.5">
+                  <i data-lucide="code" class="w-4 h-4 text-indigo-300 shrink-0"></i>
+                  <span><strong>Solve First, Watch Second</strong>: Attempt DSA problems on IDE before looking up Striver's video.</span>
+                </li>
+                <li class="flex gap-2.5">
+                  <i data-lucide="keyboard" class="w-4 h-4 text-indigo-300 shrink-0"></i>
+                  <span><strong>No Copy-Paste</strong>: Type out every single character manually to build deep muscle memory.</span>
+                </li>
+                <li class="flex gap-2.5">
+                  <i data-lucide="trending-up" class="w-4 h-4 text-indigo-300 shrink-0"></i>
+                  <span><strong>Daily Socratic Audit</strong>: Declare Time & Space Complexity explicitly on every solved problem.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Time-Blocking Quick schedule -->
+          <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+            <h3 class="text-base font-bold text-slate-800 mb-4 flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-indigo-600"></i>
+              Active Weekday Blocks
+            </h3>
+            <div class="space-y-3 text-xs">
+              <div class="flex items-center justify-between p-2 bg-slate-50 rounded-lg">
+                <span class="font-bold text-slate-700">08:00 - 10:00 AM</span>
+                <span class="bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded font-semibold">TUF Plus DSA</span>
+              </div>
+              <div class="flex items-center justify-between p-2 bg-slate-50 rounded-lg">
+                <span class="font-bold text-slate-700">11:00 AM - 01:00 PM</span>
+                <span class="bg-violet-50 text-violet-600 px-2 py-0.5 rounded font-semibold">Web Dev (Harkirat)</span>
+              </div>
+              <div class="flex items-center justify-between p-2 bg-slate-50 rounded-lg">
+                <span class="font-bold text-slate-700">02:00 - 03:30 PM</span>
+                <span class="bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded font-semibold">AIML (Harkirat)</span>
+              </div>
+              <div class="flex items-center justify-between p-2 bg-indigo-50 border border-indigo-100 rounded-lg">
+                <span class="font-bold text-indigo-900">04:00 - 07:00 PM</span>
+                <span class="bg-indigo-600 text-white px-2 py-0.5 rounded font-semibold">College Class</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Tab 3: Weekly Syllabus -->
+    <section id="content-syllabus" class="tab-content hidden space-y-8">
+      
+      <div class="bg-white border border-slate-100 shadow-sm rounded-2xl p-6">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+          <div>
+            <h3 class="text-lg font-bold text-slate-800">Track 1: TUF Plus DSA Weeks & Topics</h3>
+            <p class="text-xs text-slate-500 mt-1">Striver's Take You Forward Plus structured Java syllabus.</p>
+          </div>
+          <a href="https://github.com/Avanish-Gupta-CSE/Anchal-Coach/blob/main/.brain/Harkirat_Lectures_List.md" target="_blank" class="text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-xl flex items-center gap-1.5 transition-all duration-300">
+            <i data-lucide="external-link" class="w-4 h-4"></i> View Complete Harkirat Lectures List
+          </a>
+        </div>
+        
+        <div class="overflow-x-auto">
+          <table class="min-w-full divide-y divide-slate-150 text-sm">
+            <thead class="bg-slate-50">
+              <tr>
+                <th class="px-4 py-3 text-left font-bold text-slate-600">Week</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-600">Core Topics</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-600">Striver's TUF Plus Java Content</th>
+                <th class="px-4 py-3 text-left font-bold text-slate-600">Status</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr class="bg-indigo-50/20">
+                <td class="px-4 py-3 font-semibold text-indigo-700">Week 1</td>
+                <td class="px-4 py-3 font-semibold">Java Basics & Setup</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">JDK setup, variables, data types, standard I/O, operators.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-indigo-100 text-indigo-700 px-2.5 py-0.5 rounded font-bold">Active</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 2</td>
+                <td class="px-4 py-3">Loops & Control Flow</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">If-else statements, while/for loops, break/continue.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 2.1</td>
+                <td class="px-4 py-3">Pattern Printing</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">Star patterns, number pyramids, symmetry patterns.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 3</td>
+                <td class="px-4 py-3">Functions & Scope</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">Pass-by-value vs pass-by-reference in Java, return types.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 4</td>
+                <td class="px-4 py-3">Array Foundations</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">Array declaration, traversing, min/max in array, reverse array.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 5</td>
+                <td class="px-4 py-3">Strings & 2D Arrays</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">String pooling, string methods, matrix operations, traversal.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 6 - 8</td>
+                <td class="px-4 py-3">Sorting & Complexity</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">Bubble, Selection, Insertion Sorts; Big-O analysis equations.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 9 - 12</td>
+                <td class="px-4 py-3">Sliding Window & Sets</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">Prefix sums, sliding window, HashSets, HashMaps, Two Pointers.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 13 - 15</td>
+                <td class="px-4 py-3">Binary Search & Number Theory</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">Classic Binary Search, Bounds, Sieve of Eratosthenes, Bitwise operators.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 16 - 19</td>
+                <td class="px-4 py-3">Recursion & Backtracking</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">Base cases, call stacks, subsets, N-Queens, Sudoku Solver.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3 font-semibold">Week 20 - 21</td>
+                <td class="px-4 py-3">Advanced Sorting</td>
+                <td class="px-4 py-3 text-slate-500 text-xs">Merge sort, Quick sort, Heap sort, custom comparators.</td>
+                <td class="px-4 py-3"><span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded font-semibold">Pending</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Tab 4: Student Profile -->
+    <section id="content-profile" class="tab-content hidden space-y-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Profile Overview Card -->
+        <div class="glass-card rounded-2xl p-6 shadow-sm border border-slate-100 text-center md:col-span-1">
+          <div class="w-24 h-24 bg-gradient-to-tr from-indigo-600 to-violet-600 rounded-full mx-auto flex items-center justify-center text-white text-3xl font-extrabold shadow-md mb-4">
+            A
+          </div>
+          <h3 class="text-xl font-bold text-slate-800">Anchal</h3>
+          <p class="text-xs text-slate-500 mt-1">B.Tech in Information Technology</p>
+          <div class="text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full font-bold inline-block mt-3">
+            IGDTUW, Delhi
+          </div>
+          
+          <div class="border-t border-slate-100 mt-6 pt-5 space-y-3 text-left text-xs">
+            <div class="flex justify-between font-semibold">
+              <span class="text-slate-500">Academic Year:</span>
+              <span class="text-slate-800">Finished 1st Year (Entering 2nd)</span>
+            </div>
+            <div class="flex justify-between font-semibold">
+              <span class="text-slate-500">DSA Language:</span>
+              <span class="text-indigo-600">Java</span>
+            </div>
+            <div class="flex justify-between font-semibold">
+              <span class="text-slate-500">AI Stack:</span>
+              <span class="text-emerald-600">Python, PyTorch</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic & SDE Goals -->
+        <div class="bg-white border border-slate-100 shadow-sm rounded-2xl p-6 md:col-span-2 space-y-6">
+          <div>
+            <h3 class="text-lg font-bold text-slate-800">Engineering Ambitions</h3>
+            <p class="text-xs text-slate-500 mt-1">Her targets for structural progression and placement readying.</p>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="flex gap-4 p-4 bg-slate-50 rounded-xl">
+              <div class="p-2.5 bg-indigo-100 text-indigo-600 rounded-lg shrink-0 h-10 w-10 flex items-center justify-center">
+                <i data-lucide="laptop" class="w-5 h-5"></i>
+              </div>
+              <div class="text-xs">
+                <h4 class="font-bold text-slate-800 text-sm">Double-Engine Developer Expertise</h4>
+                <p class="text-slate-500 mt-1 leading-relaxed">
+                  Build massive competence in both SDE basics / Core Algorithms (Java) and modern software building (Full-Stack React + Agentic AI), establishing herself as an incredibly unique candidate.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-4 bg-slate-50 rounded-xl">
+              <div class="p-2.5 bg-emerald-100 text-emerald-600 rounded-lg shrink-0 h-10 w-10 flex items-center justify-center">
+                <i data-lucide="target" class="w-5 h-5"></i>
+              </div>
+              <div class="text-xs">
+                <h4 class="font-bold text-slate-800 text-sm">Target SDE Internships</h4>
+                <p class="text-slate-500 mt-1 leading-relaxed">
+                  Prepare for high-paying pre-final year SDE internship roles. Foundations laid out in these 2 months are critical for securing elite opportunities.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-4 bg-slate-50 rounded-xl">
+              <div class="p-2.5 bg-violet-100 text-violet-600 rounded-lg shrink-0 h-10 w-10 flex items-center justify-center">
+                <i data-lucide="cloud" class="w-5 h-5"></i>
+              </div>
+              <div class="text-xs">
+                <h4 class="font-bold text-slate-800 text-sm">Certified Azure AI Practitioner</h4>
+                <p class="text-slate-500 mt-1 leading-relaxed">
+                  Clear AI-901 exam by end of July to earn professional cloud credentials early in her engineering journey, validating capabilities and boosting resume strength.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-100 bg-white/60 py-6 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-400 font-semibold">
+      &copy; 2026 Anchal's Persistent Brain-Complex & SDE Coach. Fully Autonomous Deployment.
+    </div>
+  </footer>
+
+  <script>
+    // Lucide Icons initialization
+    lucide.createIcons();
+
+    // Tab Switching Logic
+    function switchTab(tabName) {
+      // Hide all contents
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('block'));
+      
+      // Remove active button styles
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-indigo-600', 'shadow-sm');
+        btn.classList.add('text-slate-600', 'hover:text-slate-900');
+      });
+
+      // Show active content
+      document.getElementById('content-' + tabName).classList.remove('hidden');
+      document.getElementById('content-' + tabName).classList.add('block');
+
+      // Add active button styles
+      const activeBtn = document.getElementById('tab-' + tabName);
+      activeBtn.classList.remove('text-slate-600', 'hover:text-slate-900');
+      activeBtn.classList.add('bg-white', 'text-indigo-600', 'shadow-sm');
+    }
+
+    // Dynamic Goals Tracking with LocalStorage
+    const GOALS_KEY = "anchal_dashboard_goals";
+
+    function getSavedGoals() {
+      const stored = localStorage.getItem(GOALS_KEY);
+      return stored ? JSON.parse(stored) : {};
+    }
+
+    function toggleGoal(goalId) {
+      const saved = getSavedGoals();
+      const checkbox = document.getElementById(goalId);
+      saved[goalId] = checkbox.checked;
+      localStorage.setItem(GOALS_KEY, JSON.stringify(saved));
+      updateProgress();
+    }
+
+    function loadGoals() {
+      const saved = getSavedGoals();
+      document.querySelectorAll('.goal-checkbox').forEach(checkbox => {
+        if (saved[checkbox.id] !== undefined) {
+          checkbox.checked = saved[checkbox.id];
+        } else {
+          checkbox.checked = false;
+        }
+      });
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const checkboxes = document.querySelectorAll('.goal-checkbox');
+      const total = checkboxes.length;
+      let completed = 0;
+      checkboxes.forEach(c => {
+        if (c.checked) completed++;
+      });
+      
+      const pct = total > 0 ? Math.round((completed / total) * 100) : 0;
+      document.getElementById('goals-progress-text').innerText = `Completed: ${completed} of ${total} (${pct}%)`;
+      document.getElementById('goals-progress-bar').style.width = `${pct}%`;
+
+      // Update Header Streak and Date
+      document.getElementById('current-date').innerText = "June 7, 2026";
+      
+      // Calculate active study streak based on completed goals
+      if (pct === 100) {
+        document.getElementById('streak-counter').innerText = "1 Day";
+      } else {
+        document.getElementById('streak-counter').innerText = "0 Days";
+      }
+    }
+
+    function resetGoals() {
+      localStorage.removeItem(GOALS_KEY);
+      loadGoals();
+    }
+
+    // Load initial state
+    window.onload = function() {
+      loadGoals();
+    }
+  </script>
+</body>
+</html>
